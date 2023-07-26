@@ -1,3 +1,3 @@
 # frontend-test
 
-<img src="https://imgur.com/AmJd2fG" />
+<img src="https://imgur.com/AmJd2fG" >
