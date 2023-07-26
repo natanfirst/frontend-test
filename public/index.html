@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <meta name="description" content="Frontend test page" />
+    <link rel="stylesheet" href="/public/styles/global.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Test Frontend</h1>
+      <h2>Natanael A.</h2>
+      <section>
+        <h3>Test 1 - Change Element Content</h3>
+        <p class="paragraph">Paragraph before change</p>
+        <button
+          id="changeButton"
+          class="default-btn"
+          aria-label="Change Paragraph"
+        >
+          Change Paragraph
+        </button>
+      </section>
+      <section>
+        <h3>Test 2 - Responsive Design</h3>
+        <div class="responsive-container">
+          <div class="first box"></div>
+          <div class="second box"></div>
+          <div class="third box"></div>
+        </div>
+      </section>
+      <section>
+        <h3>Test 3 - Fetch API</h3>
+        <div class="movies-container data-movie-list"></div>
+        <div id="skeleton-load" class="skeleton-load">
+          <div class="skeleton-box pulse"></div>
+          <div class="skeleton-box pulse"></div>
+          <div class="skeleton-box pulse"></div>
+          <div class="skeleton-box pulse"></div>
+          <div class="skeleton-box pulse"></div>
+        </div>
+      </section>
+      <section>
+        <h3>Test 4 - Form validator</h3>
+        <form id="contactForm" onsubmit="validateForm()">
+          <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+            <span class="error-message" id="nameError"></span>
+          </div>
+          <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+            <span class="error-message" id="emailError"></span>
+          </div>
+          <div>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <span class="error-message" id="messageError"></span>
+          </div>
+          <div>
+            <button class="default-btn" type="submit">Submit</button>
+          </div>
+        </form>
+      </section>
+      <h4 class="final-message">Thanks for your time.</h4>
+    </main>
+    <script src="/public/scripts/api.js"></script>
+    <script src="/public/scripts/form.js"></script>
+    <script src="/public/scripts/manipulate.js"></script>
+  </body>
+</html>
