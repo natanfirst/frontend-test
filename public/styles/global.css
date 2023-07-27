@@ -166,6 +166,7 @@ textarea {
   font-size: 14px;
   margin-top: 20px;
   text-align: justify;
+  max-height: 226px;
   -webkit-line-clamp: 15;
   display: -webkit-box;
   -webkit-box-orient: vertical;
