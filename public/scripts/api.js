@@ -22,12 +22,15 @@ const displayMovie = (movie) => {
 
 const getMovies = async () => {
   const skeleton = document.getElementById("skeleton-load");
+  const enoughData = document.getElementById("enough-data")
   try {
     const response = await fetch(baseUrl + "/films");
     const movies = await response.json();
     movies.splice(12).map(displayMovie);
   } catch (error) {
     console.error("Error fetching movies:", error);
+    skeleton.style.display = "none";
+    enoughData.style.display = "block"
   } finally {
     skeleton.style.display = "none";
   }
